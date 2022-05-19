@@ -1,0 +1,185 @@
+.Power {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+}
+.wrapper {
+    width: 100%;
+    display: contents;
+}
+.inputCreateName {
+    border: 1px solid #cdcdcd !important;
+    height: 55px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.createGymnasticBlock {
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px;
+    outline: none;
+    flex-direction: column;
+    background: #eee;
+    justify-content: center;
+}
+.createGymnasticBlock input {
+    font-size: 1rem;
+    color: #888181;
+    width: 100%;
+    text-align: left;
+    padding: .6em 1.4em .5em .8em;
+}
+
+.hide {
+    display: none !important;
+}
+.Power #inputNameGymnastic {
+    width: 100%;
+}
+
+.saveData {
+    margin-top: 20px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    outline: none;
+    background: #4caf50;
+    font-size: 1rem;
+    width: 100%;
+}
+.saveData i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.addInput {
+    background: #1663e6;
+}
+
+.saveData:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+.addInput:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+.deleteCard {
+    border: none;
+    background-color: white;
+    font-size: 1.4rem;
+    color: #676161;
+}
+.deleteCard:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+
+.addCard {
+    width: 500px;
+    border: 1px solid #cdcdcd;
+    height: 250px;
+    font-size: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dad4d4;
+    border-radius: 5px;
+    /*background: rgb(89 93 97 / 50%);*/
+    background: #84878a80;
+    animation: article 0.5s ease-out forwards;
+}
+.addCard:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #d8a2a2;
+    background: rgb(205 205 205 / 50%);
+    transition: 500ms;
+}
+.css-2b097c-container {
+    margin-bottom: 15px !important;
+}
+
+.inputCreateName:hover {
+    border-color: #7d7272;
+}
+.check {
+    width: 45px;
+    height: 45px;
+    background: #4a4747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 29px;
+}
+.check svg {
+    color: #05f76b;
+}
+
+@keyframes create {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes article {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes attention {
+    0%, 50%, 100% {
+        /*transform: rotate(0deg);*/
+        transform: translateX(0px);
+    }
+    10%, 30% {
+        /*transform: rotate(-5deg);*/
+        transform: translateX(10px);
+    }
+    20%, 40% {
+        /*transform: rotate(5deg);*/
+        transform: translateX(-10px);
+    }
+}
+
+.bg {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: .6;
+    background: rgb(89 93 97 / 50%);
+    border: 1px solid #cdcdcd;
+    animation: article 0.5s ease-out forwards;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+

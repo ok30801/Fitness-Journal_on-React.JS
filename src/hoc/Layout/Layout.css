@@ -1,0 +1,37 @@
+* {
+    outline: none;
+}
+.Layout {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+article {
+    width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0  25px 25px 25px;
+    align-items: center;
+    z-index: 2;
+    background: white;
+    animation: article .5s ease-in forwards;
+}
+
+@keyframes article {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+
+

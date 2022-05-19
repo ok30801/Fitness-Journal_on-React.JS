@@ -1,0 +1,118 @@
+.pagination {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pagination .7s ease-in forwards;
+}
+.pagination__btn {
+    width: 35px;
+    height: 35px;
+    background: #eee;
+    color: #7f7676;
+    margin: 10px 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.pagination__btn:hover {
+    cursor: pointer;
+    background: #aff3b5;
+    color: white;
+    transition: .3s;
+}
+.pagination__active {
+    background: #30c83e;
+    color: white;
+    font-size: 1rem;
+}
+.pagination__arrowPrev,
+.pagination__arrowNext {
+    padding: 4px 0;
+    color: #5d5b5b;
+    border: navajowhite;
+    background: rgb(238 238 238 / 70%);
+}
+.pagination__arrowPrev {
+    margin-right: 5px;
+}
+.pagination__arrowNext {
+    margin-left: 5px;
+}
+
+/*.pagination__prev:hover {
+    cursor: pointer;
+}*/
+.pagination__arrowPrev:hover {
+    cursor: pointer;
+    background: #30c83e;
+    color: white;
+    transition: .3s;
+}
+.pagination__arrowNext:hover {
+    cursor: pointer;
+    background: #30c83e;
+    color: white;
+    transition: .3s;
+}
+.pagination__start {
+    color: #cecbcb;
+    padding: 4px 0;
+    border: none;
+    margin-right: 5px;
+    background: rgb(238 238 238 / 70%);
+}
+.pagination__start:hover {
+    cursor: auto;
+}
+.pagination__end {
+    color: #cecbcb;
+    padding: 4px 0;
+    border: none;
+    margin-left: 5px;
+    background: rgb(238 238 238 / 70%);
+}
+.pagination__end:hover {
+    cursor: auto;
+}
+
+.pagination__arrowPrev svg {
+    width: 20px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+    display: flex !important;
+}
+.pagination__arrowNext svg {
+    width: 20px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+    display: flex !important;
+}
+.pagination__end svg {
+    width: 20px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+    display: flex !important;
+}
+.pagination__start svg {
+    width: 20px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+    display: flex !important;
+}
+
+@keyframes pagination {
+
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+

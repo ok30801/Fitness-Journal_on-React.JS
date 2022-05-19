@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("./../src/assets/img/bg_application.jpg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-position: center center;
+}
+body::-webkit-scrollbar {width:0px;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

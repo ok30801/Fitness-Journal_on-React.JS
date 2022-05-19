@@ -1,0 +1,233 @@
+.accordionItem {
+    color: #676161;
+    letter-spacing: 0.02em;
+    /*background-color: rgb(238 238 238 / 70%);*/
+    background-color: hsl(0deg 0% 100% / 70%);
+    padding: 15px;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 500px;
+}
+.accordionItem:after {
+    content: '';
+    border-right: 1px solid;
+    height: 26px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: 47px;
+    color: #676161 ;
+}
+.accordionItem:hover {
+    cursor: pointer;
+    color: #7f7676;
+    background-color: #dcd7d7;
+}
+.blockData {
+    width: 100%;
+}
+.titleCard {
+    font-size: 1.5rem;
+    color: #676161;
+    margin-top: 25px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead tr {
+    color: #ffffff;
+    background: #eee;
+}
+table thead tr td {
+    border: 1px solid #c1c5c4;
+}
+table tbody tr td {
+    border: 1px solid #e8e9eb;
+}
+table tbody tr:nth-child(2n) {
+    background: #eee;
+}
+table tbody tr:hover {
+    background: #ebffe8;
+}
+td, th {
+    vertical-align: top;
+    padding: .6rem 1rem;
+    border-bottom: 1px solid;
+    outline: none!important;
+    text-align: center;
+    color: #676161;
+}
+.saveGroup, .addInput {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 12px;
+    color: #fff;
+}
+.addInput {
+    background: #1663e6;
+}
+.saveGroup:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+.addInput:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+.wrapper {
+    width: 100%;
+    display: contents;
+}
+.alertMessage {
+    color: #989090;
+    text-align: center;
+}
+.message {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.hide {
+    display: none;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: 8px 6px 0 6px;
+    border-color: #676161 transparent transparent transparent;
+    border-style: solid;
+    transform: rotate(360deg);
+    transition: 1s;
+    margin-right: 4px;
+}
+.active .triangle {
+    transform: rotate(180deg);
+    border-color: #0be076 transparent transparent transparent;
+    transition: 1s;
+}
+.active .date {
+    border-right: 1px solid #0be076;
+}
+.accordionItem.active {
+    background: rgb(90 88 88 / 70%);
+    color: #0be076;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+    z-index: 1;
+    transition: 1s;
+}
+.accordionItem.active:after {
+    color: #0be076;
+    transition: 1s;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconСompare {
+    color: #676161;
+}
+.iconСompare.input {
+    width: auto;
+}
+.iconСompare:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transition: .4s;
+}
+.saveGroup {
+    background: #4caf50;
+}
+.btnHistory {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    animation: btnHistory .5s ease-in forwards;
+}
+.blockDelete {
+    margin: 15px 0 -10px;
+}
+.blockDelete:hover {
+    border-color: #acb1b0;
+}
+
+.deleteHistory {
+    color: #333;
+    font-size: 0.9rem;
+    border-right: 1px solid #cdcdcd;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.deleteHistory:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    color: #928f8f;
+}
+.date {
+    padding: 5px 15px;
+    border-right: 1px solid #676161;
+}
+.partBody {
+    width: 100%;
+    margin-left: 15px;
+}
+.historyBlocks {
+    margin-top: -20px;
+    opacity: 0.9;
+}
+.blockItem {
+    animation: article .5s ease-in forwards;
+}
+
+.nickName {
+    width: auto;
+    max-height: 43px;
+    background: #0BE076;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.smile {
+    font-size: 3.1rem;
+    margin: 15px 15px 15px 15px;
+}
+.smile i {
+    font-weight: 400 !important;
+}
+@keyframes article {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes btnHistory {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+

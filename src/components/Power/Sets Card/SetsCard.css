@@ -1,0 +1,231 @@
+.SetsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: article .5s ease-in forwards;
+}
+.gymnasticBlock {
+    width: 500px;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background: white;
+    animation: article 0.5s ease-out forwards;
+}
+.blockData {
+    width: 100%;
+}
+.headerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dcd4d4;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.titleCard {
+    font-size: 1.5rem;
+    color: #676161;
+}
+.iconEdit {
+    transform: rotate(125deg);
+    color: #676161;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+.iconEdit:hover {
+    cursor: pointer;
+    color: #4caf50;
+}
+.wrapperEditTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 449px;
+    border-bottom: 1px solid #dcd4d4;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+.wrapperEditTitle input {
+    width: 410px;
+}
+.wrapperEditTitle i {
+    font-size: 1.5rem;
+    color: #676161;
+}
+.wrapperEditTitle i:hover {
+    cursor: pointer;
+    color: #4caf50;
+}
+.hide {
+    display: none;
+}
+.inputEditNameCard {
+    border: none;
+    font-size: 1.5rem;
+    color: #4caf50;
+    padding: 1px 0;
+}
+.SetsCard li, .inputsStart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #676161;
+}
+.inputWeight, .repetition {
+    display: flex;
+    flex-direction: column;
+}
+.inputWeight .label {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.repetition .label {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.inputSets, .inputCreateName {
+    border: 1px solid #cdcdcd;
+    height: 55px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.inputSets:hover {
+    border-color: #7d7272;
+}
+.SetsCard input.borderColorWeight {
+    height: 56px;
+    width: 175px;
+    outline: none;
+    border: 2px solid red;
+}
+.blockBtn {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+}
+.blockBtn i.fa {
+    font-size: 1.4rem;
+    color: #676161;
+}
+.blockBtn i.fa:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+.table {
+    animation: table 1s ease-out forwards;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table thead tr {
+    color: #ffffff;
+    background: #eee;
+}
+table thead tr td {
+    border: 1px solid #c1c5c4;
+}
+table tbody tr{
+    background: white;
+}
+table tbody tr td {
+    border: 1px solid #e8e9eb;
+}
+table tbody tr:nth-child(2n) {
+    background: #eee;
+}
+table tbody tr:hover {
+    background: #ebffe8;
+}
+td, th {
+    vertical-align: top;
+    padding: .6rem 1rem;
+    border-bottom: 1px solid;
+    outline: none!important;
+    text-align: center;
+    color: #676161;
+}
+.SetsCard input.attention {
+    border: 2px solid red;
+    outline: none;
+    animation: attention 1.2s ease-in-out 0s normal none infinite running;
+}
+.Power select.attention {
+    border: 2px solid red;
+    outline: none;
+    animation: attention 1.2s ease-in-out 0s normal none infinite running;
+}
+@keyframes table {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes attention {
+    0%, 50%, 100% {
+        /*transform: rotate(0deg);*/
+        transform: translateX(0px);
+    }
+    10%, 30% {
+        /*transform: rotate(-5deg);*/
+        transform: translateX(10px);
+    }
+    20%, 40% {
+        /*transform: rotate(5deg);*/
+        transform: translateX(-10px);
+    }
+}
+@keyframes article {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

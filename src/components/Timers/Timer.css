@@ -1,0 +1,169 @@
+.container {
+    animation: article .7s ease-in forwards;
+}
+.wrapper article {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    background: none;
+}
+
+.timer, .displayTime {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 7rem;
+    color: black;
+    margin: 5px 25px 25px 25px;
+    opacity: .7;
+    border-radius: 5px;
+}
+
+.displayTime {
+    height: 160px;
+    margin-top: 20px;
+}
+.blockBtn {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+}
+.down, .up {
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    width: 150px;
+}
+.down {
+    background: #4caf50;
+    outline: none;
+}
+.up {
+    background: #1663e6;
+    outline: none;
+}
+.down:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025);
+}
+.up:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: scale(1.025)
+}
+.down > i.fa, .up > i.fa {
+    color: white;
+    font-size: 0.9rem;
+}
+.volumeIcon, .deleteItem, .update  {
+    border: none;
+    font-size: 1.4rem;
+    color: #504b4b;
+    outline: none;
+}
+.update {
+    margin: 20px 20px 0 20px;
+    color: white;
+}
+.update:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    color: #4caf50;
+    transition: .4s;
+}
+.rotate {
+    transform: rotate(180deg)
+}
+.volumeIcon:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+.wrapper {
+    width: 100%;
+    display: contents;
+}
+.timerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+    margin-top: -75px;
+}
+.timerBlockBg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px;
+    background: #fff;
+    width: 450px;
+    border-radius: 5px;
+    opacity: .6;
+    height: 100px;
+}
+.timerBlock span {
+    font-size: 1.7rem;
+    color: white;
+    margin-top: -28px;
+}
+i.icon-volumeOff {
+    font-size: 1.2rem;
+}
+.hide {
+    display: none;
+}
+.volumeBlock {
+    position: absolute;
+    margin: 20px 0 0 400px;
+    z-index: 20;
+}
+
+@keyframes article {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+
+.bg {
+    width: 500px;
+    height: 458px;
+    border-radius: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: .6;
+    position: absolute;
+    background: rgb(89 93 97 / 50%);
+    border: 1px solid #cdcdcd;
+}
+.timerBlock input {
+    opacity: .7;
+    color: #312e2e;
+    background-color: #fff;
+    width: 184px;
+    margin-bottom: 30px;
+}
